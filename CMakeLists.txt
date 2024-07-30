@@ -15,4 +15,7 @@ target_link_libraries(imgui_explore PRIVATE glad::glad)
 find_package(glfw3 CONFIG REQUIRED)
 target_link_libraries(imgui_explore PRIVATE glfw)
 
+find_package(glm CONFIG REQUIRED)
+target_link_libraries(imgui_explore PRIVATE glm::glm)
+
 target_include_directories(imgui_explore PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/imgui)
